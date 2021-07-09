@@ -39,13 +39,13 @@ void loop() {
 
   Firebase.setFloat("hum", hum); /////////////////////////////////////////////////////////////////////float tipi veri gönderme
     if (Firebase.failed()) {//hata kontrolü 
-      Serial.print("setting /hum failed:");
+      Serial.print("hum ayarlama başarısız:");
       Serial.println(Firebase.error()); 
   }
   
    Firebase.setFloat("temp", temp);/////////////////////////////////////////////////////////////////////float tipi veri gönderme
     if (Firebase.failed()) {
-      Serial.print("setting /temp failed:");
+      Serial.print("temp ayarlama başarısız:");
       Serial.println(Firebase.error());//hata kontrolü 
   }
 
